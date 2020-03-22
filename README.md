@@ -1,1 +1,0 @@
-# rhonneljickaincordova.github.io

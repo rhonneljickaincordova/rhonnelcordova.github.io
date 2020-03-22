@@ -1,23 +1,568 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Rhonnel.Cordova</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-  <style>
-    @font-face {
-      font-family: customFont;
-      src: url(sansation_light.woff);
-    }
-  body{
-    margin: 0px;
-    font-family: customFont;
-  }
-  </style>
-<body>
-  <app-root></app-root>
-<script type="text/javascript" src="runtime.js"></script><script type="text/javascript" src="es2015-polyfills.js" nomodule></script><script type="text/javascript" src="polyfills.js"></script><script type="text/javascript" src="styles.js"></script><script type="text/javascript" src="vendor.js"></script><script type="text/javascript" src="main.js"></script></body>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+
+    <title>Hi! Im Rhonnel Cordova</title>
+  </head>
+  <body>
+    <div id="main-container" class="container-fluid">
+      <div class="row">
+        <!-- PERSONAL INFO -->
+        <div class="col-xl-3 col-lg-5 hidden-md personal-info">
+          <div id="toggle-button" class="mobile-only">
+            <i class="fas fa-bars"></i>
+          </div>
+
+          <img src="test-img.png" class="hero-image" />
+
+          <!-- NAME & DESIGNATION -->
+          <div class="name-position-container mobile-only">
+            <h2 class="name" style="text-align: center;">RHONNEL CORDOVA</h2>
+            <h4 class="position" style="text-align: center">WEB DEVELOPER</h4>
+          </div>
+
+          <!-- CONTACT INFO -->
+          <div class="contact-info toggle-item">
+            <div class="detail-wrapper">
+              <i class="fas fa-mobile-alt fa-lg fa-icon"></i>09276161535 / 082
+              299 5100
+            </div>
+            <div class="detail-wrapper">
+              <i class="fas fa-at fa-lg fa-icon"></i>rhonnel_cordova@yahoo.com
+            </div>
+            <div class="detail-wrapper">
+              <i class="fas fa-map-marker-alt fa-lg fa-icon"></i>Central Park,
+              Davao City
+            </div>
+          </div>
+
+          <!-- ABOUT -->
+          <div class="about-container attribute-container toggle-item">
+            <span class="section-title"><b> ABOUT ME</b></span>
+            <hr class="bar-white" />
+
+            <div class="about-content">
+              Hi, I'm <i> Rhonnel Cordova </i>, Web Developer from Davao,
+              Philippines. <br />
+              I have been in the industry since 2015, I also love the logic and
+              the structure of coding and always strive to write elegant and
+              efficient code, whether on front-end or back-end.
+              <br /><br />
+              When I'm not coding or watching tutorials, you'll find me on the
+              court shooting some hoops and dishing assist to my friends. If not
+              in the mountain camping.
+              <br /><br />
+              I’m looking forward to working with you!
+            </div>
+          </div>
+
+          <!-- SKILLS -->
+          <div class="skills-container attribute-container toggle-item">
+            <span class="section-title"><b> SKILLS</b></span>
+            <hr class="bar-white" />
+
+            <div class="skills-content">
+              <div class="skill-wrapper">
+                <label for=""> <b> CSS </b></label>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-striped bg-warning"
+                    role="progressbar"
+                    style="width: 25%"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="skill-wrapper">
+                <label for=""> <b> HTML </b></label>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-striped bg-warning"
+                    role="progressbar"
+                    style="width: 80%"
+                    aria-valuenow="80"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="skill-wrapper">
+                <label for=""> <b> Javascript / Jquery </b></label>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-striped bg-warning"
+                    role="progressbar"
+                    style="width: 60%"
+                    aria-valuenow="60"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="skill-wrapper">
+                <label for=""> <b> Angular Js </b></label>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-striped bg-warning"
+                    role="progressbar"
+                    style="width: 90%"
+                    aria-valuenow="90"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="skill-wrapper">
+                <label for=""> <b> Angular</b></label>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-striped bg-warning"
+                    role="progressbar"
+                    style="width: 10%"
+                    aria-valuenow="10"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="skill-wrapper">
+                <label for=""> <b> React</b></label>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-striped bg-warning"
+                    role="progressbar"
+                    style="width: 20%"
+                    aria-valuenow="20"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="skill-wrapper">
+                <label for=""> <b> API</b></label>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-striped bg-warning"
+                    role="progressbar"
+                    style="width: 50%"
+                    aria-valuenow="50"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="skill-wrapper">
+                <label for=""> <b> C#</b></label>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-striped bg-warning"
+                    role="progressbar"
+                    style="width: 35%"
+                    aria-valuenow="35"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="skill-wrapper">
+                <label for=""> <b> PHP</b></label>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-striped bg-warning"
+                    role="progressbar"
+                    style="width: 40%"
+                    aria-valuenow="40"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="skill-wrapper">
+                <label for=""> <b> Database</b></label>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-striped bg-warning"
+                    role="progressbar"
+                    style="width: 30%"
+                    aria-valuenow="30"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SOCIAL MEDIA -->
+          <div class="social-container attribute-container toggle-item">
+            <a
+              href="https://www.facebook.com/rhonnel.cordova"
+              target="_blank"
+              class="social-links"
+              ><div class="detail-wrapper">
+                <i class="fab fa-facebook-f fa-lg fa-icon"></i>rhonnel.cordova
+              </div></a
+            >
+            <a
+              href="https://www.instagram.com/rhonneljickaincordova/"
+              target="_blank"
+              class="social-links"
+              ><div class="detail-wrapper">
+                <i class="fab fa-instagram fa-lg fa-icon"></i
+                >@rhonneljickaincordova
+              </div></a
+            >
+          </div>
+        </div>
+
+        <div class="col-xl-9 col-lg-7 body-container">
+          <!-- NAME & DESIGNATION -->
+          <div class="name-position-container desktop-only">
+            <h2 class="name">RHONNEL CORDOVA</h2>
+            <h4 class="position">WEB DEVELOPER</h4>
+          </div>
+
+          <!-- EXPERIENCE -->
+          <div class="experience-container">
+            <h3>JOB EXPERIENCE</h3>
+            <hr />
+
+            <!-- INTELLIS -->
+            <div class="job-container">
+              <div class="row job-date-company">
+                <div class="col-xl-3 col-lg-6 job-effective-date">
+                  March 2018 - Present
+                </div>
+                <div class="col-xl-9 col-lg-6 job-company">
+                  <a href="http://intellis.com.au/" target="_blank">Intellis</a>
+                </div>
+              </div>
+
+              <h5><strong>Front-end Developer</strong></h5>
+              <p>
+                Vivamus mattis consectetur urna. Aliquam sed hendrerit sem,
+                vitae iaculis neque. Duis sagittis cursus pulvinar. Proin et
+                venenatis ligula. Integer tempor, velit eu luctus euismod, justo
+                tellus volutpat nisl, non consectetur neque quam ut ex.
+              </p>
+
+              <ul>
+                <li>Migration from webforms to angular base codes.</li>
+                <li>
+                  Building reusable directives, components and services to
+                  lessen the code redundancy.
+                </li>
+                <li>
+                  Update the back-end webforms to API base code for efficiency,
+                  scalability, and reusability of the code.
+                </li>
+              </ul>
+            </div>
+
+            <!-- LEMON TECH SOLUTIONS -->
+            <div class="job-container">
+              <div class="row job-date-company">
+                <div class="col-xl-3 col-lg-6 job-effective-date">
+                  Sept 2019 - March 2020
+                </div>
+                <div class="col-xl-9 col-lg-6 job-company">
+                  <a href="https://lemontechsolutions.com/" target="_blank"
+                    >Lemon Tech Solutions</a
+                  >
+                </div>
+              </div>
+
+              <h5><strong>Front-end Developer</strong></h5>
+              <p>
+                Vivamus mattis consectetur urna. Aliquam sed hendrerit sem,
+                vitae iaculis neque. Duis sagittis cursus pulvinar. Proin et
+                venenatis ligula. Integer tempor, velit eu luctus euismod, justo
+                tellus volutpat nisl, non consectetur neque quam ut ex.
+              </p>
+
+              <ul>
+                <li>
+                  Building and creating new modules for generating necessary
+                  data for each page such us user profile page, reports page,
+                  dashboard and live notifications.
+                </li>
+                <li>Code enchancements for the other modules or page.</li>
+              </ul>
+            </div>
+
+            <!-- NAXUM -->
+            <div class="job-container">
+              <div class="row job-date-company">
+                <div class="col-xl-3 col-lg-6 job-effective-date">
+                  Oct 2019 - March 2018
+                </div>
+                <div class="col-xl-9 col-lg-6 job-company">
+                  <a href="https://www.naxum.com/" target="_blank">NAXUM</a>
+                </div>
+              </div>
+
+              <h5><strong>Front-end Developer, Back-end Developer</strong></h5>
+              <p>
+                Vivamus mattis consectetur urna. Aliquam sed hendrerit sem,
+                vitae iaculis neque. Duis sagittis cursus pulvinar. Proin et
+                venenatis ligula. Integer tempor, velit eu luctus euismod, justo
+                tellus volutpat nisl, non consectetur neque quam ut ex.
+              </p>
+
+              <ul>
+                <li>Creating web API services for front-end API requests.</li>
+                <li>
+                  Setting up web API services from the back-end for the front-ed
+                  requests.
+                </li>
+                <li>Code migration from Legacy PERL to PHP codes.</li>
+                <li>Maintaining modules and bug fixing.</li>
+              </ul>
+            </div>
+
+            <!-- NAXUM -->
+            <div class="job-container">
+              <div class="row job-date-company">
+                <div class="col-xl-3 col-lg-6 job-effective-date">
+                  April 2015 - March 2016
+                </div>
+                <div class="col-xl-9 col-lg-6 job-company">
+                  <a href="https://lyanthe.com/" target="_blank">Lyanthe</a>
+                </div>
+              </div>
+
+              <h5><strong>Front-end Developer, Back-end Developer</strong></h5>
+              <p>
+                Vivamus mattis consectetur urna. Aliquam sed hendrerit sem,
+                vitae iaculis neque. Duis sagittis cursus pulvinar. Proin et
+                venenatis ligula. Integer tempor, velit eu luctus euismod, justo
+                tellus volutpat nisl, non consectetur neque quam ut ex.
+              </p>
+
+              <ul>
+                <li>
+                  Code migration from ASP.Net Web Forms to Angular JS code.
+                </li>
+                <li>Implementing Angular JS on the My Financial Online.</li>
+                <li>
+                  Creating a Stored Procedure for generating a report using
+                  MSSQL.
+                </li>
+                <li>
+                  Creating reports module/pages for generating reports base from
+                  clients request.
+                </li>
+                <li>
+                  Implementing new procedures in generating Invoices and
+                  Journals for the verifiers.
+                </li>
+                <li>Enhance the process of Bookkeeping.</li>
+              </ul>
+            </div>
+
+            <!-- FREELANCE -->
+            <h3>FREELANCE PROJECTS</h3>
+            <hr />
+
+            <!-- GREENSTAR LOGISTICS -->
+            <div class="job-container">
+              <div class="row job-date-company freelance-block">
+                <div class="col-xl-3 col-lg-6 job-effective-date">
+                  December 2018
+                </div>
+                <div class="col-xl-9 col-lg-6 "></div>
+              </div>
+
+              <h5><strong>Greenstar Logistics</strong></h5>
+              <p class="project-subtitle">
+                <strong
+                  >Project Manager, Business Analyst, Database Admin, Front-end,
+                  Back-end</strong
+                >
+              </p>
+              <p>
+                Tracking Management System for the parcel for Lazada’s 3PL
+                companies and Billing System for its billing for the parcels
+                that are being delivered to the customers. And the Remittance
+                System for the drivers total remittances for their assign
+                packages or parcels.
+              </p>
+            </div>
+
+            <!-- LUYABAYA -->
+            <div class="job-container">
+              <div class="row job-date-company freelance-block">
+                <div class="col-xl-3 col-lg-6 job-effective-date">
+                  June 2018
+                </div>
+                <div class="col-xl-9 col-lg-6 "></div>
+              </div>
+
+              <h5><strong>Luyabaya: Multi-Level Marketing System</strong></h5>
+              <p class="project-subtitle">
+                <strong
+                  >Project Manager, Business Analyst, Database Admin, Front-end,
+                  Back-end</strong
+                >
+              </p>
+              <p>
+                Multilevel marketing is a marketing strategy. Where marketing,
+                salespeople get revenue which is based on their sales. In
+                multilevel marketing, there are also rewards for recruiting new
+                salespeople. Multilevel marketing has also been called network
+                marketing, and referral marketing. Depending on the details, the
+                difference between multilevel marketing and a pyramid scheme can
+                be very small.
+              </p>
+            </div>
+
+            <!-- REVELITIOS -->
+            <div class="job-container">
+              <div class="row job-date-company freelance-block">
+                <div class="col-xl-3 col-lg-6 job-effective-date">
+                  February 2016
+                </div>
+                <div class="col-xl-9 col-lg-6 "></div>
+              </div>
+
+              <h5>
+                <strong
+                  ><a
+                    href="https://www.dropbox.com/sh/68rdwsdv0p0ypfb/AAAbv9NtoPA97kyybul_l0lKa/layout%20screenshot?dl=0&subfolder_nav_tracking=1"
+                    target="_blank"
+                    >Revelitios Property Tax System</a
+                  ></strong
+                >
+              </h5>
+              <p class="project-subtitle">
+                <strong
+                  >Front-end Developer, Back-end Developer and Database
+                  Administrator</strong
+                >
+              </p>
+              <p>
+                A Property Tax Management System that computes and monitor the
+                tax values of the different establishment including House
+                Property, Commercial Buildings, etc
+              </p>
+            </div>
+
+            <!-- GOAL DRIVER -->
+            <div class="job-container">
+              <div class="row job-date-company freelance-block">
+                <div class="col-xl-3 col-lg-6 job-effective-date">
+                  February 2015
+                </div>
+                <div class="col-xl-9 col-lg-6 "></div>
+              </div>
+
+              <h5>
+                <strong
+                  ><a
+                    href="https://app.goaldriver.com/index.php/account/sign_in"
+                    target="_blank"
+                    >Goal Driver</a
+                  ></strong
+                >
+              </h5>
+              <p class="project-subtitle">
+                <strong
+                  >Front-end Developer, Back-end Developer and Database
+                  Administrator</strong
+                >
+              </p>
+              <p>
+                Business Management Software that helps the business company
+                create a business plan model, one-page strategy and monitor
+                strategy execution.
+              </p>
+            </div>
+
+            <!-- RDS -->
+            <div class="job-container">
+              <div class="row job-date-company freelance-block">
+                <div class="col-xl-3 col-lg-6 job-effective-date">
+                  April 2014
+                </div>
+                <div class="col-xl-9 col-lg-6 "></div>
+              </div>
+
+              <h5>
+                <strong
+                  ><a
+                    href="https://www.dropbox.com/sh/6j80xn3ru4x72o7/AAA0FZ5Jc5zqoUB-JPpsDldka/layout%20screenshot?dl=0&subfolder_nav_tracking=1"
+                    target="_blank"
+                    >Research and Development Information System</a
+                  ></strong
+                >
+              </h5>
+              <p class="project-subtitle">
+                <strong
+                  >Front-end Developer, Back-end Developer and Database
+                  Administrator</strong
+                >
+              </p>
+              <p>
+                Offline Profiling System that holds the record of all the
+                agricultural research from the Department of Agriculture.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CUSTOM SCRIPT -->
+    <script type="text/javascript" src="custom-script.js"></script>
+  </body>
 </html>
