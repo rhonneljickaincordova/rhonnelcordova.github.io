@@ -93,8 +93,8 @@ ul li:before {
 .fa-icon {
   color: #fff;
   background-color: #ffc107;
-  width: 40px;
-  height: 40px;
+  /* width: 40px;
+  height: 40px; */
   /* margin-right: 15px; */
   display: flex;
   align-items: center;
@@ -223,6 +223,26 @@ h4.position {
   font-size: 0.8em;
 }
 
+.contact-info {
+  margin-top: 60px;
+}
+
+.contact-info > .row {
+  margin-bottom: 5px;
+}
+
+.fa-icon > .icon {
+  font-size: 24px;
+}
+
+.contact-links > a:hover {
+  color: white;
+}
+
+.contact-links:hover {
+  background-color: black;
+}
+
 /* MGA EDITS NI WAPOLZ AYAW PALAG */
 #main-container {
   max-height: calc(100vh - 100px);
@@ -314,26 +334,6 @@ h4.position {
     font-size: 1rem;
     font-weight: light;
     margin-bottom: 0;
-  }
-
-  .contact-info {
-    margin-top: 60px;
-  }
-
-  .contact-info > .row {
-    margin-bottom: 5px;
-  }
-
-  .fa-icon > .icon {
-    font-size: 24px;
-  }
-
-  .contact-links > a:hover {
-    color: white;
-  }
-
-  .contact-links:hover {
-    background-color: black;
   }
 
   .personal-info:before {
